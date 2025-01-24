@@ -12,10 +12,10 @@ export BAR_COLOR=0x44000000
 
 
 # A nice dark nord blue
-export TEXT_COLOR=0xff1A2333
+export ITEM_BG_COLOR=0xff1A2333
 
 # This is our amber yellow
-export ITEM_BG_COLOR=0xffffc100
+export TEXT_COLOR=0xffffc100
 
 # Colour driver brown brown / blue wheel background
 # export ITEM_BG_COLOR=0xffB0A389
