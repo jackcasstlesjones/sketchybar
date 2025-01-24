@@ -2,10 +2,28 @@
 
 export WHITE=0xffffffff
 
-# -- Teal Scheme --
+## Jack Nords
+
+# A nice blueish colour
 export BAR_COLOR=0xff001f30
+
+# A nice dark nord blue
+export TEXT_COLOR=0xff1A2333
+
+# This is our amber yellow
 export ITEM_BG_COLOR=0xffffc100
+
+# Colour driver brown brown / blue wheel background
+# export ITEM_BG_COLOR=0xffB0A389
+
+
+## This is unused
 export ACCENT_COLOR=0xffffc100
+
+
+
+######################################
+
 
 # -- Gray Scheme --
 # export BAR_COLOR=0xff101314
