@@ -4,8 +4,12 @@ export WHITE=0xffffffff
 
 ## Jack Nords
 
-# A nice blueish colour
-export BAR_COLOR=0xff001f30
+# A basically very transparent black
+export BAR_COLOR=0x44000000
+
+# whatever
+# export BAR_COLOR=0x4400beff
+
 
 # A nice dark nord blue
 export TEXT_COLOR=0xff1A2333
