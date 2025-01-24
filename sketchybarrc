@@ -24,8 +24,9 @@ sketchybar --bar position=top \
                   blur_radius=0 \
                   color=0x40000000 \
                   margin=20 \
-                   notch_offset=5 \
-                   corner_radius=5
+                   y_offset=5 \
+                   corner_radius=5 \
+                   display="main"
 
 ##### Changing Defaults #####
 # We now change some default values, which are applied to all further items.
@@ -40,8 +41,8 @@ default=(
   background.color=$ITEM_BG_COLOR      
   background.corner_radius=5            \
   background.height=24      
-  icon.color=0xffffffff
-  label.color=0xffffffff
+  icon.color=0xff000000
+  label.color=0xff000000
   # icon.padding_left=4
   icon.padding_right=4
   label.padding_left=4
@@ -121,10 +122,8 @@ source $ITEM_DIR/calendar.sh
 #            --set battery update_freq=120 script="$PLUGIN_DIR/battery.sh" \
 #            --subscribe battery system_woke power_source_change
 
-
+# Add the aerospace_workspace_change event we specified in aerospace.toml
 sketchybar --add event aerospace_workspace_change
-
-
 
 # Add workspaces for all monitors
 for monitor in $(aerospace list-monitors --format "%{monitor-appkit-nsscreen-screens-id}"); do
@@ -159,6 +158,25 @@ for monitor in $(aerospace list-monitors --format "%{monitor-appkit-nsscreen-scr
       label.shadow.distance=4 \
       click_script="aerospace workspace $sid" \
       script="$CONFIG_DIR/plugins/aerospace.sh $sid"
+  done
+done
+
+# Load Icons on startup for all monitors
+for monitor in $(aerospace list-monitors); do
+  for sid in $(aerospace list-workspaces --monitor "$monitor" --empty no); do
+    apps=$(aerospace list-windows --workspace "$sid" | awk -F'|' '{gsub(/^ *| *$/, "", $2); print $2}')
+
+    sketchybar --set space.$sid drawing=on
+
+    icon_strip=" "
+    if [ "${apps}" != "" ]; then
+      while read -r app; do
+        icon_strip+=" $($CONFIG_DIR/plugins/icon_map_fn.sh "$app")"
+      done <<<"${apps}"
+    else
+      icon_strip=""
+    fi
+    sketchybar --set space.$sid label="$icon_strip"
   done
 done
 
