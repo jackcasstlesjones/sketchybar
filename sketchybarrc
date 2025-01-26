@@ -113,7 +113,7 @@ source $ITEM_DIR/spaces.sh
 # right side items
 
 # Right side items
-source $ITEM_DIR/media.sh
+# -- Right Side Of Notch Items --
 source $ITEM_DIR/calendar.sh
 sketchybar --add item separator right \
            --set separator \
@@ -205,6 +205,9 @@ for monitor in $(aerospace list-monitors); do
     sketchybar --set space.$sid label="$icon_strip"
   done
 done
+
+source $ITEM_DIR/media.sh
+
 
 ##### Force all scripts to run the first time (never do this in a script) #####
 sketchybar --update
