@@ -1,9 +1,9 @@
 #!/bin/bash
 
-sketchybar --add item front_app left \
+sketchybar --add item front_app right \
            --set front_app       background.color=$ITEM_BG_COLOR \
-                                 icon.color=$TEXT_COLOR \
+                                 icon.color=$WHITE \
                                  icon.font="sketchybar-app-font:Regular:16.0" \
-                                 label.color=$TEXT_COLOR \
+                                 label.color=$WHITE \
                                  script="$PLUGIN_DIR/front_app.sh"            \
            --subscribe front_app front_app_switched

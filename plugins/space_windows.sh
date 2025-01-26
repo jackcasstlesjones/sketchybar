@@ -31,3 +31,10 @@ if [ "$SENDER" = "aerospace_workspace_change" ]; then
     fi
   fi
 fi
+
+# Check if fullscreen app has been triggered
+if [ -n "$FULLSCREEN_APP" ]; then
+  # Reload SketchyBar to force a full refresh of the bar
+  echo "Fullscreen app detected, reloading SketchyBar"
+  sketchybar --reload
+fi
