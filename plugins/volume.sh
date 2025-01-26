@@ -23,7 +23,7 @@ volume_change() {
     ;;
     0) 
       ICON=$VOLUME_0
-      sketchybar --set volume_icon label.color=0xffff0000  # Red color
+      sketchybar --set volume_icon label.color=0xff868686
     ;;
     *) 
       ICON=$VOLUME_100
