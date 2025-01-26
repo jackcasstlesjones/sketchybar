@@ -24,9 +24,9 @@ sketchybar --bar position=top \
                   blur_radius=0 \
                   color=$BAR_COLOR \
                   margin=10 \
-                   y_offset=5 \
-                   corner_radius=5 \
-                   display="main"
+                  y_offset=5 \
+                  corner_radius=5 \
+                  # display="main"
 
 ##### Changing Defaults #####
 # We now change some default values, which are applied to all further items.
