@@ -207,6 +207,8 @@ for monitor in $(aerospace list-monitors); do
 done
 
 source $ITEM_DIR/media.sh
+source "$PLUGIN_DIR/stats/item.sh"
+
 
 
 ##### Force all scripts to run the first time (never do this in a script) #####
