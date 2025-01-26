@@ -8,5 +8,6 @@ sketchybar --add item media center \
                        icon=􀑪             \
                        icon.color=$TEXT_COLOR   \
                        background.drawing=off \
+                    background.color=$WHITE \
                        script="$PLUGIN_DIR/media.sh" \
            --subscribe media media_change

@@ -28,6 +28,8 @@ icon.color=$WHITE
   label.color=$WHITE
   label.align=left
   label.font="sketchybar-app-font:Regular:16.0"
+  background.color=none
+
 )
 
 status_bracket=(

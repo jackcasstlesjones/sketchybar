@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sketchybar --add item front_app right \
-           --set front_app       background.color=$ITEM_BG_COLOR \
+           --set front_app       background.color=none\
                                  icon.color=$WHITE \
                                  icon.font="sketchybar-app-font:Regular:16.0" \
                                  label.color=$WHITE \
