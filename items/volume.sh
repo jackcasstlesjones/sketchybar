@@ -11,6 +11,7 @@ volume_slider=(
   slider.background.color=$WHITE
   slider.knob.drawing=on
   background.color=none
+
 )
 
 volume_icon=(
@@ -23,6 +24,8 @@ volume_icon=(
   icon.color=$TEXT_COLOR
   icon.font="sketchybar-app-font:Regular:16.0"
   label.width=30
+icon.color=$WHITE
+  label.color=$WHITE
   label.align=left
   label.font="sketchybar-app-font:Regular:16.0"
 )
