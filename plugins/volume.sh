@@ -5,17 +5,29 @@ WIDTH=100
 volume_change() {
   source "$HOME/.config/sketchybar/icons.sh"
   case $INFO in
-    [6-9][0-9]|100) ICON=$VOLUME_100
+    [6-9][0-9]|100) 
+      ICON=$VOLUME_100
+      sketchybar --set volume_icon label.color=0xffffffff  # White color
     ;;
-    [3-5][0-9]) ICON=$VOLUME_66
+    [3-5][0-9]) 
+      ICON=$VOLUME_66
+      sketchybar --set volume_icon label.color=0xffffffff
     ;;
-    [1-2][0-9]) ICON=$VOLUME_33
+    [1-2][0-9]) 
+      ICON=$VOLUME_33
+      sketchybar --set volume_icon label.color=0xffffffff
     ;;
-    [1-9]) ICON=$VOLUME_10
+    [1-9]) 
+      ICON=$VOLUME_10
+      sketchybar --set volume_icon label.color=0xffffffff
     ;;
-    0) ICON=$VOLUME_0
+    0) 
+      ICON=$VOLUME_0
+      sketchybar --set volume_icon label.color=0xffff0000  # Red color
     ;;
-    *) ICON=$VOLUME_100
+    *) 
+      ICON=$VOLUME_100
+      sketchybar --set volume_icon label.color=0xffffffff
   esac
 
   sketchybar --set volume_icon label=$ICON
