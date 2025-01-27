@@ -182,7 +182,7 @@ for monitor in $(aerospace list-monitors --format "%{monitor-appkit-nsscreen-scr
       label.padding_right=20 \
       label.padding_left=0 \
       label.y_offset=-1 \
-      label.shadow.drawing=off \
+      label.shadow.drawing=on \
       label.shadow.color=0xA0000000 \
       label.shadow.distance=4 \
       click_script="aerospace workspace $sid" \
