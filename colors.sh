@@ -5,7 +5,8 @@ export WHITE=0xffffffff
 ## Jack Nords
 
 # A basically very transparent black
-export BAR_COLOR=0x44000000
+# export BAR_COLOR=0x44000000
+export BAR_COLOR=0xff353C4B
 
 # whatever
 # export BAR_COLOR=0x4400beff
