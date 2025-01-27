@@ -28,12 +28,12 @@ $CONFIG_DIR/sketchybar-system-stats/target/release/stats_provider --cpu usage --
 sketchybar --bar position=top \
                   height=40 \
                   blur_radius=0 \
-                  color=$BAR_COLOR \
+                  color=none \
                   margin=10 \
                   y_offset=5 \
                   corner_radius=5 \
-                  border_width=2 \
-                  border_color=0xff6D727A
+                  # border_width=2 \
+                  # border_color=0xff6D727A
                   # display="main"
 
 ##### Changing Defaults #####
@@ -124,7 +124,7 @@ sketchybar --add item separator right \
            	icon.font="Hack Nerd Font Mono:regular:18.0" \
            label.drawing=off \
            background.color=none \
-           icon.padding_right=56
+          #  icon.padding_right=56
 source $ITEM_DIR/volume.sh
 source $ITEM_DIR/battery.sh
 
@@ -210,7 +210,29 @@ done
 source $ITEM_DIR/media.sh
 source "$PLUGIN_DIR/stats/item.sh"
 
+# Add a bracket around all workspace items
+sketchybar --add bracket workspaces '/space\..*/' \
+           --set workspaces \
+           background.border_color=0xAAffc100 \
+           background.border_width=2 \
+           background.corner_radius=8 \
+           background.height=35 \
+           background.padding_left=20 \
+           background.padding_right=20 \
+           padding_left=20 \
+           background.color=0x33000000 \
 
+           # Add a bracket around all workspace items
+sketchybar --add bracket secondo volume separator_right front_app battery memory cpu.percent \
+           --set secondo \
+           background.border_color=0xAAffc100 \
+           background.border_width=2 \
+           background.corner_radius=8 \
+           background.height=35 \
+           background.padding_left=20 \
+           background.padding_right=20 \
+           padding_left=20 \
+           background.color=0x33000000 \
 
 ##### Force all scripts to run the first time (never do this in a script) #####
 sketchybar --update
