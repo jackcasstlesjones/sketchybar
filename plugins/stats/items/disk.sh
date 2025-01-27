@@ -7,7 +7,7 @@ source "$HOME/.config/sketchybar/icons.sh"
 cpu_percent=(
 	background.padding_left=0
 	background.padding_right=0
-	label.font="$FONT:Heavy:12"
+	label.font="sketchybar-app-font:Regular:16.0        "
 	label=CPU%
 	label.color="$WHITE"
 	icon="$CPU"

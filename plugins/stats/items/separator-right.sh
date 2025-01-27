@@ -2,7 +2,7 @@
 
 separator_right=(
 	icon=
-	icon.font="Hack Nerd Font Mono:Regular:16.0"
+	icon.font="Hack Nerd Font Mono:Regular:28.0"
 	background.padding_left=10
 	background.padding_right=10
 	label.drawing=off

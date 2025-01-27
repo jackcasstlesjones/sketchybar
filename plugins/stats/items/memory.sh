@@ -5,7 +5,7 @@ source "$HOME/.config/sketchybar/icons.sh"
 
 memory=(
 	background.padding_left=0
-	label.font="$FONT:Heavy:12"
+	label.font="sketchybar-app-font:Regular:16.0"
 	label.color="$WHITE"
 	icon="$MEMORY"
 	icon.font="Hack Nerd Font Mono:Bold:16.0"
