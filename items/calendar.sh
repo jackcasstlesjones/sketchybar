@@ -7,6 +7,8 @@ sketchybar --add item calendar right \
                           icon.color=$WHITE \
                           label.color=$WHITE \
                              background.height=35 \
+                             label.padding_right=20 \
+                             icon.padding_left=20 \
            background.color=0xff353C4B \
              background.border_color=0xAAffc100 \
            background.border_width=2 \
