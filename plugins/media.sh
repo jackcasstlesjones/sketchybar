@@ -1,7 +1,9 @@
 #!/bin/bash
 
 STATE="$(echo "$INFO" | jq -r '.state')"
-if [ "$STATE" = "playing" ]; then
+APP="$(echo "$INFO" | jq -r '.app // empty')"
+
+if [ "$STATE" = "playing" ] && [ "$APP" = "Spotify" ]; then
   MEDIA="$(echo "$INFO" | jq -r '.title + " - " + .artist')"
   sketchybar --set $NAME label="$MEDIA" drawing=on
 else
