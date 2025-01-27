@@ -6,7 +6,7 @@ sketchybar --add item calendar right \
                           script="$PLUGIN_DIR/calendar.sh" \
                           icon.color=$WHITE \
                           label.color=$WHITE \
-                             background.height=35 \
+                             background.height=40 \
                              label.padding_right=20 \
                              icon.padding_left=20 \
            background.color=0xff353C4B \
