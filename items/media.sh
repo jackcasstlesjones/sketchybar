@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sketchybar --add item media center \
-           --set media label.color=$TEXT_COLOR \
+           --set media label.color=$WHITE \
                        label.max_chars=20 \
                        icon.padding_left=0 \
                        scroll_texts=on \
