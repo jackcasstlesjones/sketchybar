@@ -26,7 +26,7 @@ $CONFIG_DIR/sketchybar-system-stats/target/release/stats_provider --cpu usage --
 # https://felixkratz.github.io/SketchyBar/config/tricks#color-picker
 
 sketchybar --bar position=top \
-                  height=40 \
+                  height=30 \
                   blur_radius=0 \
                   color=none \
                   margin=-12 \
@@ -44,8 +44,8 @@ sketchybar --bar position=top \
 default=(
   padding_left=5
   padding_right=5
-   icon.font="IBM Plex Mono:Medium:15.0" 
-  label.font="IBM Plex Mono:Medium:15.0"
+   icon.font="IBM Plex Mono:Medium:12.0" 
+  label.font="IBM Plex Mono:Medium:12.0"
   # icon.font="SF Pro:Semibold:15.0" 
   # label.font="SF Pro:Semibold:15.0"
   background.color=$ITEM_BG_COLOR      
@@ -78,7 +78,7 @@ sketchybar --default "${default[@]}"
 #     icon.padding_right=7
 #     background.color=0x40ffffff
 #     background.corner_radius=5
-#     background.height=25
+#     background.height=30
 #     label.drawing=off
 #     script="$PLUGIN_DIR/space.sh"
 #     click_script="yabai -m space --focus $sid"
@@ -156,9 +156,9 @@ for monitor in $(aerospace list-monitors --format "%{monitor-appkit-nsscreen-scr
     # fi
 
    # If sid equals 1, skip adding it to the bar
-    if [ "$sid" -eq 1 ]; then
-      continue  # Skip this iteration and don't display it
-    fi
+    # if [ "$sid" -eq 1 ]; then
+    #   continue  # Skip this iteration and don't display it
+    # fi
     # if [ "$sid" -eq "X" ]; then
 
 
@@ -168,17 +168,17 @@ for monitor in $(aerospace list-monitors --format "%{monitor-appkit-nsscreen-scr
       --subscribe space.$sid aerospace_workspace_change \
       --set space.$sid \
       drawing=on \
-      background.color=0x44ffffff \
+      background.color=0x00ffffff \
       background.corner_radius=5 \
       background.drawing=on \
       background.border_color=0xAAFFFFFF \
       background.border_width=0 \
-      background.height=25 \
+      background.height=20 \
       icon="$sid" \
       icon.padding_left=10 \
       icon.shadow.distance=4 \
       icon.shadow.color=0xA0000000 \
-      label.font="sketchybar-app-font:Regular:16.0" \
+      label.font="sketchybar-app-font:Regular:12.0" \
       label.padding_right=20 \
       label.padding_left=0 \
       label.y_offset=-1 \
@@ -218,7 +218,7 @@ sketchybar --add bracket workspaces '/space\..*/' \
            background.border_color=0xAAffc100 \
            background.border_width=2 \
            background.corner_radius=8 \
-           background.height=40 \
+           background.height=30 \
            background.padding_left=20 \
            background.padding_right=20 \
            padding_left=20 \
@@ -230,7 +230,7 @@ sketchybar --add bracket secondo volume separator_right front_app battery memory
            background.border_color=0xAAffc100 \
            background.border_width=2 \
            background.corner_radius=8 \
-           background.height=40 \
+           background.height=30 \
            background.padding_left=20 \
            background.padding_right=20 \
            padding_left=20 \
