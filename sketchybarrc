@@ -156,9 +156,9 @@ for monitor in $(aerospace list-monitors --format "%{monitor-appkit-nsscreen-scr
     # fi
 
    # If sid equals 1, skip adding it to the bar
-    # if [ "$sid" -eq 1 ]; then
-    #   continue  # Skip this iteration and don't display it
-    # fi
+    if [ "$sid" -eq 1 ]; then
+      continue  # Skip this iteration and don't display it
+    fi
     # if [ "$sid" -eq "X" ]; then
 
 
