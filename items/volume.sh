@@ -22,12 +22,12 @@ volume_icon=(
   icon.width=0
   icon.align=left
   icon.color=$TEXT_COLOR
-  icon.font="sketchybar-app-font:Regular:12.0"
+  icon.font="sketchybar-app-font:Regular:14.0"
   label.width=30
 icon.color=$WHITE
   label.color=$WHITE
   label.align=left
-  label.font="sketchybar-app-font:Regular:12.0"
+  label.font="sketchybar-app-font:Regular:14.0"
   background.color=none
 
 )

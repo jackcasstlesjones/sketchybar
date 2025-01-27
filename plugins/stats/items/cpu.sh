@@ -7,7 +7,7 @@ source "$HOME/.config/sketchybar/icons.sh"
 cpu_percent=(
 	background.padding_left=0
 	background.padding_right=0
-	label.font="IBM Plex Mono:Regular:12.0"
+	label.font="IBM Plex Mono:Regular:14.0"
 	label=CPU%
 icon.font="Hack Nerd Font Mono:Bold:16.0"  # Changed this line
 
