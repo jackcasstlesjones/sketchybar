@@ -215,7 +215,7 @@ source "$PLUGIN_DIR/stats/item.sh"
 # Add a bracket around all workspace items
 sketchybar --add bracket workspaces '/space\..*/' \
            --set workspaces \
-           background.border_color=0xAAffc100 \
+           background.border_color=$BRACKET_BORDER\
            background.border_width=2 \
            background.corner_radius=8 \
            background.height=40 \
@@ -227,7 +227,7 @@ sketchybar --add bracket workspaces '/space\..*/' \
            # Add a bracket around all workspace items
 sketchybar --add bracket secondo volume separator_right front_app battery memory cpu.percent \
            --set secondo \
-           background.border_color=0xAAffc100 \
+           background.border_color=$BRACKET_BORDER\
            background.border_width=2 \
            background.corner_radius=8 \
            background.height=40 \

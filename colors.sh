@@ -18,6 +18,8 @@ export ITEM_BG_COLOR=0xff1A2333
 # This is our amber yellow
 export TEXT_COLOR=0xffffc100
 
+export BRACKET_BORDER=0xAAffc100
+
 # Colour driver brown brown / blue wheel background
 # export ITEM_BG_COLOR=0xffB0A389
 

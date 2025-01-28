@@ -9,7 +9,7 @@ sketchybar --add item media center \
                        scroll_texts=on \
                        icon.color=$TEXT_COLOR   \
                        background.drawing=off \
-                        background.border_color=0xAAffc100 \
+                        background.border_color=$BRACKET_BORDER \
            background.border_width=2 \
            background.corner_radius=8 \
            background.height=40 \
