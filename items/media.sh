@@ -17,7 +17,6 @@ sketchybar --add item media center \
            icon.padding_right=10 \
            label.padding_right=20 \
            background.color=0xff353C4B \
-background.border_color=0xAAffc100 \
            background.border_width=2 \
            background.corner_radius=8 \
                        script="$PLUGIN_DIR/media.sh" \
