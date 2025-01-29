@@ -212,8 +212,18 @@ done
 source $ITEM_DIR/media.sh
 source "$PLUGIN_DIR/stats/item.sh"
 
+sketchybar --add item space_separator left \
+           --set space_separator \
+           icon="│" \
+           icon.color=$TEXT_COLOR \
+           	icon.font="Hack Nerd Font Mono:regular:18.0" \
+           label.drawing=off \
+           background.color=none \
+           icon.padding_right=0 \
+           icon.padding_left=0
+
 # Add a bracket around all workspace items
-sketchybar --add bracket workspaces '/space\..*/' \
+sketchybar --add bracket workspaces calendar '/space\..*/' space_separator \
            --set workspaces \
            background.border_color=$BRACKET_BORDER\
            background.border_width=2 \
