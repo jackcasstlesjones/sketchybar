@@ -119,14 +119,14 @@ source $ITEM_DIR/spaces.sh
 # Right side items
 # -- Right Side Of Notch Items --
 source $ITEM_DIR/calendar.sh
-sketchybar --add item separator right \
-           --set separator \
-           icon="│" \
-           icon.color=$TEXT_COLOR \
-           	icon.font="Hack Nerd Font Mono:regular:18.0" \
-           label.drawing=off \
-           background.color=none \
-           icon.padding_right=14
+# sketchybar --add item separator right \
+#            --set separator \
+#            icon="│" \
+#            icon.color=$TEXT_COLOR \
+#            	icon.font="Hack Nerd Font Mono:regular:18.0" \
+#            label.drawing=off \
+#            background.color=none \
+#            icon.padding_right=14
 source $ITEM_DIR/volume.sh
 source $ITEM_DIR/battery.sh
 
