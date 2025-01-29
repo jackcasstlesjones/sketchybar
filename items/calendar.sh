@@ -8,7 +8,7 @@ sketchybar --add item calendar left \
                           label.color=$WHITE \
                              label.padding_right=20 \
                              icon.padding_left=20 \
-           background.color=$BRACKET_BACKGROUND \
+           background.color=none \
            background.border_width=2 \
 
             #  background.border_color=$BRACKET_BORDER \
