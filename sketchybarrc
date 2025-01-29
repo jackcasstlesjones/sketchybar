@@ -233,7 +233,7 @@ sketchybar --add bracket workspaces calendar '/space\..*/' space_separator \
            background.padding_left=20 \
            background.padding_right=20 \
            padding_left=20 \
-           background.color=0xff353C4B \
+           background.color=$BRACKET_BACKGROUND \
 
            # Add a bracket around all workspace items
 sketchybar --add bracket secondo volume separator_right front_app battery memory cpu.percent \
@@ -245,7 +245,7 @@ sketchybar --add bracket secondo volume separator_right front_app battery memory
            background.padding_left=20 \
            background.padding_right=20 \
            padding_left=20 \
-           background.color=0xff353C4B \
+           background.color=$BRACKET_BACKGROUND
 
 ##### Force all scripts to run the first time (never do this in a script) #####
 sketchybar --update

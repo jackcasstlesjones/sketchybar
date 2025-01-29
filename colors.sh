@@ -21,6 +21,8 @@ export TEXT_COLOR=0xffffc100
 # export BRACKET_BORDER=0xAAffc100
 export BRACKET_BORDER=0xff6D727A
 
+export BRACKET_BACKGROUND=0xff353C4B
+
 # Colour driver brown brown / blue wheel background
 # export ITEM_BG_COLOR=0xffB0A389
 
