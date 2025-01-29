@@ -213,6 +213,13 @@ done
 source $ITEM_DIR/media.sh
 source "$PLUGIN_DIR/stats/item.sh"
 
+sketchybar --add item bluetooth right \
+           --set bluetooth \
+                script="~/.config/sketchybar/plugins/bluetooth.sh" \
+                update_freq=5 \
+                icon=󰂯 \
+           --subscribe bluetooth system_woke
+
 sketchybar --add item space_separator left \
            --set space_separator \
            icon="│" \
