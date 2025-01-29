@@ -27,7 +27,7 @@ $CONFIG_DIR/sketchybar-system-stats/target/release/stats_provider --cpu usage --
 
 sketchybar --bar position=top \
                   height=40 \
-                  blur_radius=0 \
+                  blur_radius=10 \
                   color=none \
                   margin=-12 \
                   y_offset=5 \
