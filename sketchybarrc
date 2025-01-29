@@ -177,6 +177,7 @@ for monitor in $(aerospace list-monitors --format "%{monitor-appkit-nsscreen-scr
       icon="$sid" \
       icon.padding_left=10 \
       icon.shadow.distance=4 \
+         icon.font="IBM Plex Mono:Bold:15.0"  \
       icon.shadow.color=0xA0000000 \
       label.font="sketchybar-app-font:Regular:16.0" \
       label.padding_right=20 \
