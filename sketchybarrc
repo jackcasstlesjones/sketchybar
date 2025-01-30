@@ -213,6 +213,22 @@ done
 source $ITEM_DIR/media.sh
 source "$PLUGIN_DIR/stats/item.sh"
 
+bluetooth_audio=(
+  script="$CONFIG_DIR/plugins/bluetooth_audio.sh"
+  icon.font="Hack Nerd Font:Bold:16.0"
+  icon.padding_right=4
+  icon=󰋋
+  label.font="SF Pro:Semibold:13.0"
+  label.padding_right=8
+  update_freq=3
+)
+
+sketchybar --add item bluetooth_audio right \
+           --set bluetooth_audio "${bluetooth_audio[@]}" \
+                           icon.font="Hack Nerd Font Mono:regular:22.0" \
+           background.color=none \
+           --subscribe bluetooth_audio system_woke
+
 sketchybar --add item bluetooth right \
            --set bluetooth \
                 script="~/.config/sketchybar/plugins/bluetooth.sh" \
